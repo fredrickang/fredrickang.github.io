@@ -14,8 +14,8 @@ profile:
     <p>Real-Time Computing Lab</p>
     <p>DGIST</p>
     <p>Daegu, South Korea</p>
-    <p>Email: woosung.kang@dgist.ac.kr</p>
-    <p>Alt. Email: fredrickangws@gmail.com</p>
+    <p>Email: <a href="mailto:woosungkang@dgist.ac.kr">woosungkang@dgist.ac.kr</a></p>
+    <p>Alt. Email: <a href="mailto:fredrickangws@gmail.com">fredrickangws@gmail.com</a></p>
     
 selected_papers: true
 
