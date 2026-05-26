@@ -2,21 +2,33 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: Woosung Kang
+
+first_name: Woosung
+middle_name:
+last_name: Kang
+
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  For research inquiries, collaborations, or academic opportunities,
+  please contact me by email.
+
+description: >
+  I am a postdoctoral researcher at DGIST. My research lies at the intersection
+  of real-time systems, embedded AI, and system software. I design runtime
+  frameworks, scheduling mechanisms, and memory management techniques that
+  enable predictable and efficient execution of AI workloads on resource-constrained
+  platforms.
+
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
+  <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
+keywords: real-time systems, embedded AI, system software, DNN inference, multi-DNN inference, GPU memory, runtime systems, scheduling, edge computing, on-device AI
+
+lang: en
+
+icon: ⚙️
 
 url: https://fredrickang.github.io # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
