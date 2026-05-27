@@ -18,3 +18,5 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
