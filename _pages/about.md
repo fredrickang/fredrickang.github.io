@@ -32,8 +32,12 @@ latest_posts:
   limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome! I am a postdoctoral researcher in the Department of Electrical Engineering and Computer Science at DGIST, where I work in the [Real-Time Computing Lab](http://rtcl.dgist.ac.kr/) under [Prof. Hoon Sung Chwa](https://rtcl.dgist.ac.kr/index.php/professor). I received both my Ph.D. and B.S. from DGIST.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research lies at the intersection of real-time systems and deep learning. I design system-level frameworks—spanning task scheduling and CPU/GPU resource management—that make DNN inference on resource-constrained embedded and edge platforms both efficient and time-predictable. A recurring theme in my work is taming GPU memory and compute bottlenecks so that latency-critical applications can reliably meet their real-time guarantees.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am always glad to discuss research or potential collaborations. Feel free to reach out at [woosungkang (at) dgist.ac.kr](mailto:woosungkang@dgist.ac.kr).
+
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
