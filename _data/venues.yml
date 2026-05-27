@@ -1,9 +1,10 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+RTAS:
+  color: "#1565c0"
+RTSS:
+  color: "#c0392b"
+RTS:
+  color: "#00897b"
+ICCAD:
+  color: "#7b1fa2"
+ICTC:
+  color: "#e67e22"
