@@ -38,6 +38,8 @@ My research lies at the intersection of real-time systems and deep learning. I d
 
 I am always glad to discuss research or potential collaborations. Feel free to reach out at [woosungkang (at) dgist.ac.kr](mailto:woosungkang@dgist.ac.kr).
 
+<!-- TEMP: deploy sync test, remove after verifying --> SYNC-CHECK-7Q2K
+
 
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
