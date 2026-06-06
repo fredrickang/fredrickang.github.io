@@ -1,0 +1,22 @@
+/*******************************************************************************
+ * Site-local overrides (fredrickang.github.io)
+ *
+ * Loaded last by `assets/css/main.scss` so these rules win cascade ties
+ * against the gem-owned partials in `al_folio_core`.
+ ******************************************************************************/
+
+/* Navbar: show only the menu links on the right, hide the name/brand.
+ * The menu list (`.navbar-menu-list`) is already right-aligned by the core
+ * `_navbar.scss` (`justify-content: flex-end; margin-left: auto`); we just
+ * remove the brand title that otherwise sits on the left. */
+.navbar {
+  .navbar-brand.title {
+    display: none;
+  }
+
+  /* Reassert right alignment in case the hidden brand was the only flex
+   * spacer pushing the menu over. */
+  .navbar-menu-list {
+    margin-left: auto;
+  }
+}
