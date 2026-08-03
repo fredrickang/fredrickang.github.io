@@ -10,6 +10,14 @@
  * `_navbar.scss` (`justify-content: flex-end; margin-left: auto`); we just
  * remove the brand title that otherwise sits on the left. */
 .navbar {
+  /* Tailwind v4 currently emits an invalid `top` declaration for `.fixed-top`.
+   * Pin the sticky navbar to the viewport edge and keep scrolled content from
+   * showing through the header. */
+  &.fixed-top {
+    top: 0;
+    background-color: var(--global-bg-color);
+  }
+
   .navbar-brand.title {
     display: none;
   }

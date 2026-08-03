@@ -110,6 +110,21 @@ test("navbar menu stays right-aligned on desktop pages", async ({ page }, testIn
   expect(Math.abs(alignment.menuRight - alignment.containerRight)).toBeLessThanOrEqual(24);
 });
 
+test("fixed navbar covers the viewport edge while scrolling", async ({ page }) => {
+  await preparePage(page, "dark");
+  await page.goto("/al-folio/", { waitUntil: "networkidle" });
+  await stabilizeVisuals(page);
+  await page.evaluate(() => window.scrollTo(0, 400));
+
+  const navbar = page.locator("#navbar");
+  await expect(navbar).toHaveCSS("top", "0px");
+  await expect(navbar).not.toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
+
+  const navbarBox = await navbar.boundingBox();
+  expect(navbarBox).not.toBeNull();
+  expect(Math.abs(navbarBox.y)).toBeLessThanOrEqual(1);
+});
+
 test("navbar search button opens modal and toggle buttons use pointer cursor", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name === "mobile", "navbar search/theme controls are collapsed under mobile menu");
 
