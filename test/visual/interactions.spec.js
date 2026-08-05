@@ -123,6 +123,8 @@ test("fixed navbar covers the viewport edge while scrolling", async ({ page }) =
   const navbarBox = await navbar.boundingBox();
   expect(navbarBox).not.toBeNull();
   expect(Math.abs(navbarBox.y)).toBeLessThanOrEqual(1);
+  expect(Math.abs(navbarBox.x)).toBeLessThanOrEqual(1);
+  expect(Math.abs(navbarBox.width - page.viewportSize().width)).toBeLessThanOrEqual(1);
 });
 
 test("navbar search button opens modal and toggle buttons use pointer cursor", async ({ page }, testInfo) => {

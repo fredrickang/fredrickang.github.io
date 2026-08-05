@@ -1,15 +1,8 @@
 name: Render a CV
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
-  workflow_call:
+  # The canonical PDF is maintained manually at
+  # assets/pdf/CV_WoosungKang.pdf. Keep RenderCV available as an explicit
+  # maintenance tool without replacing that authored document on each push.
   workflow_dispatch:
 permissions:
   contents: write

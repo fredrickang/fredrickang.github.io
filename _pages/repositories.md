@@ -2,46 +2,32 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Open-source artifacts for research in real-time systems and multi-DNN inference.
 nav: true
 nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
+## Research repositories
 
-## GitHub users
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-</div>
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="row row-cols-1 row-cols-md-2 repository-grid">
   {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
+    <div class="col mb-4">
+      <a class="repository-card-link" href="{{ repo.url }}" target="_blank" rel="external nofollow noopener">
+        <article class="card repository-card h-100 hoverable">
+          <div class="card-body d-flex flex-column">
+            <div class="repository-card-heading">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <h2 class="card-title">{{ repo.name }}</h2>
+            </div>
+            <p class="repository-path">{{ repo.repository }}</p>
+            <p class="card-text">{{ repo.description }}</p>
+            <div class="repository-meta mt-auto">
+              <span>{{ repo.language }}</span>
+              <span>{{ repo.venue }}</span>
+            </div>
+          </div>
+        </article>
+      </a>
+    </div>
   {% endfor %}
 </div>
-{% endif %}

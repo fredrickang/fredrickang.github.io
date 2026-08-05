@@ -15,7 +15,17 @@
    * showing through the header. */
   &.fixed-top {
     top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--global-bg-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    @supports (background-color: color-mix(in srgb, black, transparent)) {
+      background-color: color-mix(in srgb, var(--global-bg-color) 92%, transparent);
+    }
   }
 
   .navbar-brand.title {
@@ -26,5 +36,211 @@
    * spacer pushing the menu over. */
   .navbar-menu-list {
     margin-left: auto;
+  }
+}
+
+/* Publication titles remain clickable without adopting the theme's purple
+ * link color. An underline on hover provides the interaction cue instead. */
+.publications ol.bibliography li .title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--global-text-color);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+}
+
+/* Give news headlines more visual presence while keeping them neutral rather
+ * than inheriting the theme's purple link color. A light card surface keeps
+ * the black titles readable in both light and dark modes. */
+.news {
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 0.55rem;
+
+    th,
+    td {
+      padding: 0.8rem 1rem;
+      vertical-align: middle;
+      background-color: #f8fafc;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+      transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+    }
+
+    th {
+      color: #4b5563;
+      border-left: 4px solid #38bdf8;
+      border-radius: 0.55rem 0 0 0.55rem;
+    }
+
+    td {
+      border-right: 1px solid #e5e7eb;
+      border-radius: 0 0.55rem 0.55rem 0;
+    }
+
+    tr:hover {
+      th,
+      td {
+        background-color: #fff;
+        border-color: #cbd5e1;
+        box-shadow: 0 0.3rem 0.8rem rgb(15 23 42 / 8%);
+      }
+    }
+  }
+
+  .news-title {
+    font-size: 1.02rem;
+    font-weight: 650;
+    line-height: 1.4;
+    color: #111827;
+    text-decoration: none;
+
+    &:visited,
+    &:hover,
+    &:focus {
+      color: #000;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: #38bdf8;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.2em;
+    }
+  }
+}
+
+/* Balance the homepage biography against the portrait/contact column. The
+ * default 30% profile width makes a portrait-oriented photo considerably
+ * taller than the short bio and leaves an empty block before News. */
+@media (min-width: 576px) {
+  .post article > .profile {
+    .more-info {
+      font-size: 0.82rem;
+      line-height: 1.4;
+
+      p {
+        margin-bottom: 0.55rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .post article > .profile {
+    width: 24%;
+    max-width: 215px;
+    margin-left: 2rem;
+  }
+}
+
+/* Keep embedded project demos responsive at a 16:9 aspect ratio. */
+.project-video-embed {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+/* Research figures use transparent canvases with dark labels. Keep a light
+ * backing surface so the diagrams remain legible in dark mode. */
+.project-figure-light {
+  padding: 0.75rem;
+  background-color: #fff;
+}
+
+/* Present research diagrams as consistent thumbnails on the project index. */
+.projects .card > figure {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 16 / 6;
+  margin: 0;
+  overflow: hidden;
+  background-color: #fff;
+
+  picture {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.card-img-top {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    object-fit: contain;
+  }
+}
+
+/* Native repository cards avoid relying on third-party generated images. */
+.repository-card-link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.repository-card {
+  border: 1px solid var(--global-divider-color);
+  background-color: var(--global-card-bg-color);
+
+  .repository-card-heading {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 0.35rem;
+
+    i {
+      font-size: 1.5rem;
+      color: var(--global-text-color);
+    }
+
+    .card-title {
+      margin: 0;
+      color: var(--global-text-color);
+    }
+  }
+
+  .repository-path {
+    margin-bottom: 1rem;
+    font-family: var(--global-font-family-mono, monospace);
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+
+  .repository-meta {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    span {
+      padding: 0.2rem 0.55rem;
+      font-size: 0.8rem;
+      color: var(--global-text-color);
+      background-color: var(--global-code-bg-color);
+      border-radius: 999px;
+    }
+  }
+
+  &:hover {
+    border-color: var(--global-theme-color);
+
+    .card-title {
+      color: var(--global-theme-color);
+    }
   }
 }

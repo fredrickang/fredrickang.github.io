@@ -1,14 +1,19 @@
-github_users:
-  - torvalds
-  - alshedivat
-
-repo_description_lines_max: 2
-
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - name: ZeroSwap
+    repository: fredrickang/zeroswap_public
+    url: https://github.com/fredrickang/zeroswap_public
+    description: Artifact for minimizing swap overhead in real-time multi-DNN inference through SSD-based GPU memory extension.
+    venue: RTAS 2026
+    language: Python
+  - name: RT-Swap
+    repository: fredrickang/Public-RT-Swap
+    url: https://github.com/fredrickang/Public-RT-Swap
+    description: Real-time GPU memory management framework that uses CPU memory as swap space for multi-DNN inference.
+    venue: RTAS 2024
+    language: Python
+  - name: LaLaRAND
+    repository: fredrickang/LaLaRAND
+    url: https://github.com/fredrickang/LaLaRAND
+    description: Layer-by-layer CPU/GPU scheduling framework for real-time DNN tasks on heterogeneous embedded platforms.
+    venue: RTSS 2021
+    language: Python
