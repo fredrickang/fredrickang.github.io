@@ -1,31 +1,31 @@
 metadata:
-  last_updated: "2026-08-04"
+  last_updated: '2026-08-12'
 papers:
-  2osOgNQ5qMEC:
+  lR3UZbcAAAAJ:2osOgNQ5qMEC:
     citations: 2
-    title: "Paste-and-Cut: Collective Image Localization and Classification for Real-Time Multi-Camera Object Detection"
-    year: "2023"
-  9yKSN-GCB0IC:
+    title: 'Paste-and-Cut: Collective Image Localization and Classification for Real-Time Multi-Camera Object Detection'
+    year: '2023'
+  lR3UZbcAAAAJ:9yKSN-GCB0IC:
     citations: 45
-    title: "DNN-SAM: Split-and-Merge DNN Execution for Real-Time Object Detection"
-    year: "2022"
-  YsMSGLbcyi4C:
+    title: 'DNN-SAM: Split-and-Merge DNN Execution for Real-Time Object Detection'
+    year: '2022'
+  lR3UZbcAAAAJ:YsMSGLbcyi4C:
     citations: 9
-    title: Timing Guarantees for Inference of AI Models in Embedded Systems
-    year: "2025"
-  hqOjcs7Dif8C:
+    title: Timing guarantees for inference of AI models in embedded systems
+    year: '2025'
+  lR3UZbcAAAAJ:hqOjcs7Dif8C:
     citations: 0
-    title: "ZeroSwap: Minimizing Swap Overhead for Real-Time Multi-DNN Inference via SSD-based GPU Memory Extension"
-    year: "2026"
-  u-x6o8ySG0sC:
+    title: 'ZeroSwap: Minimizing Swap Overhead for Real-Time Multi-DNN Inference via SSD-based GPU Memory Extension'
+    year: '2026'
+  lR3UZbcAAAAJ:u-x6o8ySG0sC:
     citations: 108
-    title: "LaLaRAND: Flexible Layer-by-Layer CPU/GPU Scheduling for Real-Time DNN Tasks"
-    year: "2021"
-  ufrVoPGSRksC:
+    title: 'LaLaRAND: Flexible Layer-by-Layer CPU/GPU Scheduling for Real-Time DNN Tasks'
+    year: '2021'
+  lR3UZbcAAAAJ:ufrVoPGSRksC:
     citations: 0
-    title: Mitigating Resource Contention for Responsive On-Device Machine Learning Inferences
-    year: "2025"
-  zYLM7Y9cAGgC:
+    title: Mitigating Resource Contention for Responsive On-device Machine Learning Inferences
+    year: '2025'
+  lR3UZbcAAAAJ:zYLM7Y9cAGgC:
     citations: 13
-    title: "RT-Swap: Addressing GPU Memory Bottlenecks for Real-Time Multi-DNN Inference"
-    year: "2024"
+    title: 'Rt-swap: Addressing gpu memory bottlenecks for real-time multi-dnn inference'
+    year: '2024'
