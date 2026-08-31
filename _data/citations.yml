@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-12'
+  last_updated: '2026-08-31'
 papers:
   lR3UZbcAAAAJ:2osOgNQ5qMEC:
     citations: 2
@@ -18,7 +18,7 @@ papers:
     title: 'ZeroSwap: Minimizing Swap Overhead for Real-Time Multi-DNN Inference via SSD-based GPU Memory Extension'
     year: '2026'
   lR3UZbcAAAAJ:u-x6o8ySG0sC:
-    citations: 108
+    citations: 109
     title: 'LaLaRAND: Flexible Layer-by-Layer CPU/GPU Scheduling for Real-Time DNN Tasks'
     year: '2021'
   lR3UZbcAAAAJ:ufrVoPGSRksC:
